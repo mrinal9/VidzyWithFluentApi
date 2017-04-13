@@ -1,0 +1,16 @@
+c:\users\mrinal\documents\visual studio 2013\Projects\VidzyCodeFirst\VidzyCodeFirst\bin\Debug\VidzyCodeFirst.exe.config
+c:\users\mrinal\documents\visual studio 2013\Projects\VidzyCodeFirst\VidzyCodeFirst\bin\Debug\VidzyCodeFirst.exe
+c:\users\mrinal\documents\visual studio 2013\Projects\VidzyCodeFirst\VidzyCodeFirst\bin\Debug\VidzyCodeFirst.pdb
+c:\users\mrinal\documents\visual studio 2013\Projects\VidzyCodeFirst\VidzyCodeFirst\bin\Debug\EntityFramework.dll
+c:\users\mrinal\documents\visual studio 2013\Projects\VidzyCodeFirst\VidzyCodeFirst\bin\Debug\EntityFramework.SqlServer.dll
+c:\users\mrinal\documents\visual studio 2013\Projects\VidzyCodeFirst\VidzyCodeFirst\bin\Debug\EntityFramework.xml
+c:\users\mrinal\documents\visual studio 2013\Projects\VidzyCodeFirst\VidzyCodeFirst\bin\Debug\EntityFramework.SqlServer.xml
+c:\users\mrinal\documents\visual studio 2013\Projects\VidzyCodeFirst\VidzyCodeFirst\obj\Debug\VidzyCodeFirst.csprojResolveAssemblyReference.cache
+c:\users\mrinal\documents\visual studio 2013\Projects\VidzyCodeFirst\VidzyCodeFirst\obj\Debug\VidzyCodeFirst.exe
+c:\users\mrinal\documents\visual studio 2013\Projects\VidzyCodeFirst\VidzyCodeFirst\obj\Debug\VidzyCodeFirst.pdb
+c:\users\mrinal\documents\visual studio 2013\Projects\VidzyCodeFirst\VidzyCodeFirst\obj\Debug\VidzyCodeFirst.Migrations.InitialModel.resources
+c:\users\mrinal\documents\visual studio 2013\Projects\VidzyCodeFirst\VidzyCodeFirst\obj\Debug\VidzyCodeFirst.csproj.GenerateResource.Cache
+c:\users\mrinal\documents\visual studio 2013\Projects\VidzyCodeFirst\VidzyCodeFirst\obj\Debug\VidzyCodeFirst.Migrations.AddinReferenceDataToGenreTable.resources
+c:\users\mrinal\documents\visual studio 2013\Projects\VidzyCodeFirst\VidzyCodeFirst\obj\Debug\VidzyCodeFirst.Migrations.AddinManyToManyRelationshipBetweenVideoAndGenreTable.resources
+C:\Users\mrinal\documents\visual studio 2013\Projects\VidzyCodeFirst\VidzyCodeFirst\obj\Debug\VidzyCodeFirst.Migrations.UsingFluntApiToChangeVideoAndGenres.resources
+C:\Users\mrinal\documents\visual studio 2013\Projects\VidzyCodeFirst\VidzyCodeFirst\obj\Debug\VidzyCodeFirst.Migrations.AddingTagsToVidosAndCreatingRelationship.resources

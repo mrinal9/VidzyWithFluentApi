@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{55B2DC05-DDFD-4EFA-B460-65B5E4DEA26C}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>VidzyCodeFirst</RootNamespace>
+    <AssemblyName>VidzyCodeFirst</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classification.cs" />
+    <Compile Include="EntityConfigurations\GenreConfiguration.cs" />
+    <Compile Include="EntityConfigurations\VideoConfiguration.cs" />
+    <Compile Include="Migrations\201702190838542_InitialModel.cs" />
+    <Compile Include="Migrations\201702190838542_InitialModel.Designer.cs">
+      <DependentUpon>201702190838542_InitialModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201702190840471_AddinReferenceDataToGenreTable.cs" />
+    <Compile Include="Migrations\201702190840471_AddinReferenceDataToGenreTable.Designer.cs">
+      <DependentUpon>201702190840471_AddinReferenceDataToGenreTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201702190917540_AddinManyToManyRelationshipBetweenVideoAndGenreTable.cs" />
+    <Compile Include="Migrations\201702190917540_AddinManyToManyRelationshipBetweenVideoAndGenreTable.Designer.cs">
+      <DependentUpon>201702190917540_AddinManyToManyRelationshipBetweenVideoAndGenreTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201702210257521_UsingFluntApiToChangeVideoAndGenres.cs" />
+    <Compile Include="Migrations\201702210257521_UsingFluntApiToChangeVideoAndGenres.Designer.cs">
+      <DependentUpon>201702210257521_UsingFluntApiToChangeVideoAndGenres.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201702210322270_AddingTagsToVidosAndCreatingRelationship.cs" />
+    <Compile Include="Migrations\201702210322270_AddingTagsToVidosAndCreatingRelationship.Designer.cs">
+      <DependentUpon>201702210322270_AddingTagsToVidosAndCreatingRelationship.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\Genre.cs" />
+    <Compile Include="Models\Tag.cs" />
+    <Compile Include="Models\Video.cs" />
+    <Compile Include="Models\VidzyCodeFirstContext.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201702190838542_InitialModel.resx">
+      <DependentUpon>201702190838542_InitialModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201702190840471_AddinReferenceDataToGenreTable.resx">
+      <DependentUpon>201702190840471_AddinReferenceDataToGenreTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201702190917540_AddinManyToManyRelationshipBetweenVideoAndGenreTable.resx">
+      <DependentUpon>201702190917540_AddinManyToManyRelationshipBetweenVideoAndGenreTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201702210257521_UsingFluntApiToChangeVideoAndGenres.resx">
+      <DependentUpon>201702210257521_UsingFluntApiToChangeVideoAndGenres.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201702210322270_AddingTagsToVidosAndCreatingRelationship.resx">
+      <DependentUpon>201702210322270_AddingTagsToVidosAndCreatingRelationship.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
